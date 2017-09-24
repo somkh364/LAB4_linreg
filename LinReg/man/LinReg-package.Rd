@@ -13,24 +13,26 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{LinReg}
 \packageIndices{LinReg}
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
+This Package contains th implementation of Linear Regression. In statistics the most widely used techniques is linear regression where we study the potential relationship between the variables.The relation between independent variable and dependent variable
 }
-\author{
-\packageAuthor{LinReg}
+\Authors@R: c(
+      person("Somaya", "Khoda Bakhsh", email = "somkh364@student.liu.se", role = "cre"),
+ -    person("Thi", "Phalm", email = "Thiph169@student.liu.se", role = "aut"))
 
-Maintainer: \packageMaintainer{LinReg}
+\Maintainer: Somaya Khoda Bakhsh <somkh364@student.liu.se>
 }
 \references{
-~~ Literature or other references for background information ~~
+https://en.wikipedia.org/wiki/Linear_regression
+https://www.r-bloggers.com/simple-linear-regression-2/
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
-~~ the R documentation directory ~~
+Optionally other standard keywords, one per line, from file KEYWORDS in
+the R documentation directory
 \keyword{ package }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+Optional links to other man pages, e.g.
+\code{\link[<pkg>:<pkg>-package]{<pkg>}}
 }
 \examples{
-~~ simple examples of the most important functions ~~
+linreg_mod <- linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+linreg_mod$summary()
 }
